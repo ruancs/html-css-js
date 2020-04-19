@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="box">
+    <h1>Somando Valores!</h1>
+    <input type = "number" name = "txtn1" id= "txtn1"><p id = "mais"> + </p>
+    <input type = "number" name = "txtn2" id= "txtn2">
+    <input type = "button" value = "somar" onclick = "somar()" id ="som"> 
+    <p id="res">resultado:</p>
+    </div>
+
+    <style>
+
+        #box{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(148, 167, 41);
+            box-shadow: 6px 5px 3px rgb(71, 71, 71);
+            border-radius: 10px;
+
+            
+            width: 500px;
+
+        }
+
+        h1{
+           color:white;
+           padding:0.5em; 
+           text-align: center;
+        }
+
+        #mais{
+            text-align: center;
+        }
+
+        #txtn2{
+            text-align: center;
+            font-size: 2.5em;
+            width: 2em;
+            height: 2em;
+            display: block;
+
+            margin-left:auto;
+            margin-right: auto;
+            
+        }
+        
+        #txtn1{
+            text-align: center;
+            font-size: 2.5em;
+            width: 2em;
+            height: 2em;
+            display: block;
+
+            margin-left:auto;
+            margin-right: auto;
+            
+        }
+
+        #som{
+            text-decoration-color: none;
+            font-size:25px;
+            padding:0;
+            margin-top: 1em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width:7em;
+            height: 3em;
+            background-image:linear-gradient(to bottom right, green,rgb(55, 55, 168));
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
+            color: white;
+        }
+
+
+
+        p{
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        function somar(){
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = s
+        }
+
+    </script>
+
+
+
+</body>
+</html>
